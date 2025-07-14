@@ -30,6 +30,16 @@ function get_list_objets()
     $requete = "SELECT * from po_v_objet";
     $sql = mysqli_query(dbconnect(), $requete);
     $r = array();
+    while( $vr = mysqli_fetch_assoc($sql) )
+    {
+        $r[] = $vr;
+    }
+    return $r;
+}
+
+function get_emp_or_not($id_object)
+{
+
 }
 
 ?>

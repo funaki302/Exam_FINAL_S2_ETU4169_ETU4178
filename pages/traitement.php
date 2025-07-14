@@ -15,7 +15,7 @@ if ($login == true) {
 else {
     set_new_member($nom,$email, $dtn, $mdp,$genre,$ville);
     $_SESSION['req_selct'] = take_id_membre($email,$mdp);
-    header('location:acceuil.php');
+    header('location:List_object.php');
 }
 
 

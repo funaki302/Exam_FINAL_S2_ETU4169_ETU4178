@@ -1,5 +1,4 @@
 <?php 
-include('../inc/connections.php');
 session_start();
 ?>
 <!DOCTYPE html>
@@ -11,7 +10,7 @@ session_start();
     <link rel="stylesheet" href="../ass/style.css">
 </head>
 <body>
-<form action="traitement1.php" method="post">
+<form action="traitement.php" method="post">
         <?php if(isset($_GET['error'])){?>
             <p id="errors">Efa misy aih !</p>
         <?php }?>

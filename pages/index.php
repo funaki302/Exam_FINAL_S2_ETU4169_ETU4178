@@ -13,7 +13,7 @@ session_start();
 </head>
 
 <body>
-    <form action="traitement.php" method="post">
+    <form action="traitement1.php" method="post">
         <?php if(isset($_GET['error'])){?>
             <p id="errors"> Ano mbola tsy inscrit ngia ! </p>
         <?php }?>
